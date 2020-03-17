@@ -9,7 +9,7 @@ provider "azurerm" {
 
 module "base" {
   source  = "app.terraform.io/synaptic_racing/base/azure"
-  version = "0.0.1"
+  version = "0.0.2"
   rg-name = var.rg-name
   location = var.location
   env-name = var.env-name
