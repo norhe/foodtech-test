@@ -17,3 +17,19 @@ variable "dest-range" {
 variable "owner" {
   type    = string
 }
+
+output "rg-name" {
+  value = module.base.rg-name 
+}
+
+output "rg-location" {
+  value = module.base.rg-location
+}
+
+output "rg-id" {
+  value = module.base.rg-id
+}
+
+output "owner" {
+  value = var.owner
+}
